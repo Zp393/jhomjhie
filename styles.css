@@ -421,8 +421,9 @@ header .wedding-date {
   background-color: #fdf8f2; /* fallback */
   padding: 4rem 1.5rem;
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #5a4a42;
+  font-style: italic;
 }
 
 .gift-guide .container {
@@ -675,8 +676,9 @@ header .wedding-date {
   background-color: transparent;
   padding: 4rem 1.5rem;
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: #5a4a42;
+  font-style: italic;
 }
 
 .upload-qr {
