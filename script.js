@@ -132,4 +132,17 @@ document.addEventListener("DOMContentLoaded", function () {
       : 'Show Guest List';
   });
 });
-  
+
+// Music
+const music = document.getElementById('background-music');
+const toggleButton = document.getElementById('music-toggle');
+
+toggleButton.addEventListener('click', () => {
+    if (music.paused) {
+        music.play();
+        toggleButton.textContent = 'Pause Music';
+    } else {
+        music.pause();
+        toggleButton.textContent = 'Play Music';
+    }
+});
