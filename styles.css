@@ -692,7 +692,7 @@ header .wedding-date {
 .music-button {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   padding: 10px 20px;
   background-color: #ff69b4; /* Light pink for wedding theme */
   color: white;
