@@ -306,10 +306,10 @@ header .wedding-date {
 }
 
 .map-image {
-  width: 100px; /* Set a width for the image */
+  width: 120px; /* Set a width for the image */
   height: auto; /* Maintain aspect ratio */
   cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 50%; /* Optional: Add rounded corners */
   transition: transform 0.3s ease; /* Add a transition effect */
 }
 
@@ -685,7 +685,7 @@ header .wedding-date {
   margin-top: 1rem;
   max-width: 200px;
   border: 2px solid #e8ded0;
-  border-radius: 12px;
+  border-radius: 50%;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
 }
 
