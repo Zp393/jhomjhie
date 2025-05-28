@@ -133,16 +133,43 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Music
-const music = document.getElementById('background-music');
-const toggleButton = document.getElementById('music-toggle');
 
-toggleButton.addEventListener('click', () => {
-    if (music.paused) {
-        music.play();
-        toggleButton.textContent = 'Pause Music';
-    } else {
-        music.pause();
-        toggleButton.textContent = 'Play Music';
+
+// youtube
+
+let player;
+    let isPlaying = false;
+    const button = document.getElementById('youtube-btn');
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '0',
+        width: '0',
+        videoId: 'dy9nwe9_xzw', // Hillsong - Oceans
+        playerVars: {
+          autoplay: 0,
+          controls: 0,
+          modestbranding: 1,
+          rel: 0
+        },
+        events: {
+          onReady: () => {
+            // Optionally preload
+          }
+        }
+      });
     }
-});
+
+    button.addEventListener('click', () => {
+      if (!player) return;
+
+      if (isPlaying) {
+        player.pauseVideo();
+        button.textContent = '▶️';
+      } else {
+        player.playVideo();
+        button.textContent = '⏸️';
+      }
+
+      isPlaying = !isPlaying;
+    });
